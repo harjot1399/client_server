@@ -1,0 +1,21 @@
+.TH CLIENT 1 "November 2022" "version xx"
+.SH NAME
+client program - reads input from cin or manually from keyboard and sends transcation requests to server
+.SH SYNOPSIS
+.I client 
+.B portnumber 
+.B ip_address
+.SH DESCRIPTION
+.B Client 
+is responsible to take input from stdin or manually from user and than it sends the transcation to server
+Two types of commands can be given to client and if it is sleep command than client sleep for the given time, otherwise it sents to server
+The server sends the response as unique transcation id back to client. 
+Client logs each transcation and when it terminates it produces a text file with name of the machine and process id of client
+.SH EXAMPLES
+.B ./client
+.B 5002
+.B 127.0.0.1
+.SH BUGS
+When the server timeout, user have to manually terminate the client using ctrl-d command
+.SH AUTHOR
+Harjot Singh

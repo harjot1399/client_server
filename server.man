@@ -1,0 +1,19 @@
+.TH SERVER 1 "November 2022" "version xx"
+.SH NAME
+server program - recieves request from different clients, process it and sends back the response
+.SH SYNOPSIS
+.I server
+.B portnumber 
+.SH DESCRIPTION
+.B Server
+is responsible to process all the transcation requests that comes from the clients.
+When server completes a request, it sends back a response which is unique transcation id.
+Server has a timout of 30 seconds, and will terminate if nothing has happened for 30 seconds
+It produces a server log file after its timeout
+.SH EXAMPLES
+.B ./server
+.B 5002
+.SH BUGS
+When the server timeout, only than server log will show all the activity of the server
+.SH AUTHOR
+Harjot Singh
